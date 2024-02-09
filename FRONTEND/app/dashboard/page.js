@@ -18,19 +18,19 @@ const Dashboard = () => {
          </div>
         </header> 
 
-         <div className="bg-gray-200 p-10 rounded mb-4 h-56 items-center">
+         <div className="bg-gray-200 rounded mb-4 h-56 items-center">
           <img
-            src="https://via.placeholder.com/500x300"
+            src="https://images.unsplash.com/photo-1418489098061-ce87b5dc3aee?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fG5hdHVyYWx8ZW58MHx8MHx8fDA%3D"
             alt="Placeholder Image"
-            className="w-1/4 h-2/3 object-cover rounded"
+            className="w-full h-full object-cover rounded"
           />
         </div> 
 
         <div className='flex flex-row'>
-         <div className="flex-shrink-0 bg-orange-500 w-1/4 h-84 mr-4 ml-2 rounded">
+         <div className="flex-shrink-0 bg-yellow-500 w-1/4 h-84 mr-4 ml-2 rounded">
         <div className="w-64 h-64 rounded-full bg-gray-300 overflow-hidden transform translate-y-[-50%] translate-x-[20%]">
             <img
-              src="https://via.placeholder.com/150"
+              src="https://media.licdn.com/dms/image/D4D03AQH-3tFURkvBmw/profile-displayphoto-shrink_800_800/0/1693336355093?e=1712793600&v=beta&t=yT3AiPXIi9uDjLlvATcaMQurA55hdJKX4u_z5vCWHrc"
               alt="Profile"
               className="w-full h-full object-cover "
             />
