@@ -1,8 +1,15 @@
 'use client'
-import React, { useState } from 'react';
-
+import React from 'react';
+import { useSession } from 'next-auth/react';
+import { redirect } from 'next/navigation';
 
 const Dashboard = () => {
+  const { data: session } = useSession({
+    required: true,
+    onUnauthenticated() {
+        redirect('/api/auth/signin?callbackUrl=/client')
+    }
+  })
   const [rating, setRating] = useState(3); 
   const StarRating = ({ rating }) => {
     const stars = Array.from({ length: 5 }, (_, index) => (
