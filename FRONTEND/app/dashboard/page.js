@@ -39,7 +39,7 @@ const Dashboard = () => {
           className='px-3 py-2 border-2 border-black rounded focus:outline-none focus:border-orange-500'
         />
         <button className='hover:text-gray-300 px-4 py-2 bg-yellow-500 hover:bg-orange-600 text-white rounded transition duration-300'>
-          Logout
+          <a href='/logout '>Logout</a>
         </button>
       </div>
     </div>
@@ -68,7 +68,7 @@ const Dashboard = () => {
         <StarRating className='' rating={rating} />
         {/* Button to Chat */}
         <button className='mt-4 px-4 py-2 bg-yellow-500 hover:bg-orange-600 text-white rounded transition duration-300'>
-          Chat with User
+          <a href='/chat' >Chat with User</a>
         </button>
       </div>
     </div>

@@ -12,8 +12,7 @@ import AboutUs from './aboutus/page';
 const navigation = [
   { name: 'About Us', href: '/aboutus' },
   { name: 'Features', href: '/features' },
-  { name: 'Our Motivation', href: '#' },
-  { name: 'Vision', href: '#' },
+  { name: 'Chat-with-Github', href: 'https://chatwithgitrepo.streamlit.app/' },
 ]
 
 export default function Home() {
@@ -142,12 +141,12 @@ export default function Home() {
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
-                href="#"
+                href="/dashboard"
                 className="rounded-md bg-yellow-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-orange-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Get started
               </a>
-              <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+              <a href="/features" className="text-sm font-semibold leading-6 text-gray-900">
                 Learn more <span aria-hidden="true">→</span>
               </a>
             </div>
