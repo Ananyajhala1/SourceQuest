@@ -1,11 +1,20 @@
+'use client'
 import React from 'react';
+import { useSession } from 'next-auth/react';
+import { redirect } from 'next/navigation';
 
 const Dashboard = () => {
+  const { data: session } = useSession({
+    required: true,
+    onUnauthenticated() {
+        redirect('/api/auth/signin?callbackUrl=/client')
+    }
+  })
   return (
     <div className='flex flex-col bg-white h-screen'>
         <header>
         <div className="flex-row">
-            <div className="flex justify-end bg-gray-800 text-white p-2">
+            <div className="flex justify-end text-black p-2">
                <div className="flex items-center space-x-4">
                  <button className="hover:text-gray-300">
                   Settings
