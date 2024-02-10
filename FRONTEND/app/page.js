@@ -4,12 +4,13 @@ import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link';
+import AboutUs from './aboutus/page';
 // import Image from 'next/image';
 // import backgroundImage from 'public/background1.jpg';
 
 
 const navigation = [
-  { name: 'About Us', href: '#' },
+  { name: 'About Us', href: '/aboutus' },
   { name: 'Features', href: '#' },
   { name: 'Our Motivation', href: '#' },
   { name: 'Vision', href: '#' },
