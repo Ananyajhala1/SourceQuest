@@ -1,8 +1,10 @@
 'use client'
 import React from 'react';
 import { useSession } from 'next-auth/react';
-import { redirect } from 'next/navigation';
 import { useState } from 'react';
+import { redirect } from 'next/navigation';
+import Link from 'next/link';
+
 const Dashboard = () => {
   const { data: session } = useSession({
     required: true,
@@ -38,9 +40,11 @@ const Dashboard = () => {
           placeholder='Search...'
           className='px-3 py-2 border-2 border-black rounded focus:outline-none focus:border-orange-500'
         />
+       <Link href='/'>
         <button className='hover:text-gray-300 px-4 py-2 bg-yellow-500 hover:bg-orange-600 text-white rounded transition duration-300'>
           <a href='/logout '>Logout</a>
         </button>
+        </Link>
       </div>
     </div>
   </header>

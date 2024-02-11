@@ -1,17 +1,22 @@
 "use client"
 import React from "react";
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import Link from 'next/link';
 const links = [
-    { name: 'Open roles', href: '#' },
-    { name: 'Internship program', href: '#' },
-    { name: 'Our values', href: '#' },
-    { name: 'Meet our leadership', href: '#' },
+    { name: 'Features', href: '/features' },
   ]
   const stats = [
-    { name: 'Offices worldwide', value: '12' },
-    { name: 'Full-time colleagues', value: '300+' },
-    { name: 'Hours per week', value: '40' },
-    { name: 'Paid time off', value: 'Unlimited' },
+    { name: 'Member involved', value: '4' },
+    { name: 'Contributors with us', value: '300+' },
+    { name: 'Average hours a week', value: '40' },
+    { name: 'Packages recieved ', value: 'Unlimited' },
   ]
+
+  const navigation = [
+    { name: 'About Us', href: '/aboutus' },
+    { name: 'Features', href: '/features' },
+  ]
+  
   
   export default function AboutUs() {
     return (
@@ -46,12 +51,49 @@ const links = [
           />
         </div>
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <header className="fixed inset-x-0 top-0 z-50 bg-white ">
+        <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+          <div className="flex lg:flex-1">
+            <a href="#" className="-m-1.5 p-1.5">
+              <span className="sr-only">Your Company</span>
+              <img
+                className="h-8 w-auto"
+                src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Quest_2018.svg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div className="flex lg:hidden">
+            <button
+              type="button"
+              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+              onClick={() => setMobileMenuOpen(true)}
+            >
+              <span className="sr-only">Open main menu</span>
+              <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+            </button>
+          </div>
+          <div className="hidden lg:flex lg:gap-x-12">
+            {navigation.map((item) => (
+              <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-900">
+                {item.name}
+              </a>
+            ))}
+          </div>
+          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+          <Link href="/dashboard">      
+            <div className="text-sm font-semibold leading-6 text-gray-900">
+              Log in <span aria-hidden="true">&rarr;</span>
+            </div>
+            </Link>
+          </div>
+        </nav>
+        </header>
           <div className="mx-auto max-w-2xl lg:mx-0">
-            <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">Work with us</h2>
+            <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">About us</h2>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-              fugiat veniam occaecat fugiat aliqua.
-            </p>
+              We aim to help beginner contributors work better with open source and github codebases. 
+              </p>
           </div>
           <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">

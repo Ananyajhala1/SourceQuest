@@ -5,8 +5,6 @@ import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link';
 import AboutUs from './aboutus/page';
-// import Image from 'next/image';
-// import backgroundImage from 'public/background1.jpg';
 
 
 const navigation = [
@@ -22,7 +20,7 @@ export default function Home() {
     // <div className="relative isolate px-6 pt-14 lg:px-8 bg-cover bg-center "
     // style={{ display: 'flex', justifyContent: 'center', alignItems: 'center',   background: `url('/background2.jpg')`,
     //  }}    >
-    <div className='bg-white'>
+    <div className='bg-white h-screen'>
 
       <header className="fixed inset-x-0 top-0 z-50 bg-white ">
         <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
@@ -95,13 +93,13 @@ export default function Home() {
                     </a>
                   ))}
                 </div>
-                <div className="py-6">
-                  <a
-                    href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                <div className="py-6 text-xl">
+                  <link
+                    href="/dashboard"
+                    className="-mx-3 block rounded-lg px-3 text-lg py-2.5 font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     Log in
-                  </a>
+                  </link>
                 </div>
               </div>
             </div>
@@ -142,6 +140,7 @@ export default function Home() {
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="/dashboard"
+                href="/dashboard"
                 className="rounded-md bg-yellow-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-orange-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Get started
@@ -149,6 +148,7 @@ export default function Home() {
               <a href="/features" className="text-sm font-semibold leading-6 text-gray-900">
                 Learn more <span aria-hidden="true">→</span>
               </a>
+
             </div>
           </div>
         </div>
@@ -164,6 +164,7 @@ export default function Home() {
             }}
           />
         </div>
+        <AboutUs/>
       </div>
     </div>
   )
