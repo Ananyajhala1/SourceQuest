@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import React from 'react';
 import { useSession } from 'next-auth/react';
 import { useState } from 'react';
@@ -9,7 +9,7 @@ const Dashboard = () => {
   const { data: session } = useSession({
     required: true,
     onUnauthenticated() {
-        redirect('/api/auth/signin?callbackUrl=/client')
+        redirect('/api/auth/signin?callbackUrl=/client');
     }
   })
   const [rating, setRating] = useState(3); 
