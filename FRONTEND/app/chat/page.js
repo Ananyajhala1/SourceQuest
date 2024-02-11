@@ -45,10 +45,10 @@ const Chat = () => {
 
     return (
         <div className="flex flex-col justify-center items-center h-screen bg-gray-100">
-            <div className="max-w-lg w-full p-6 bg-white rounded-lg shadow-md text-black mb-auto overflow-y-auto max-h-60">
+            <div className="max-w-lg w-full p-6 bg-white rounded-lg shadow-md text-black mb-auto overflow-y-auto max-h-full max-w-full">
                 {messages.map((msg, index) => (
-                    <div key={index} className={`mb-20 ${index % 2 === 0 ? 'text-right' : 'text-left'}`}>
-                        <div className={`py-2 px-4 rounded-lg inline-block ${index % 2 === 0 ? 'bg-blue-500 text-white float-right' : 'bg-gray-200 text-black float-left'}`}>
+                    <div key={index} className={`mb-4 ${index % 2 === 0 ? 'text-right' : 'text-left'}`}>
+                        <div className="py-2 rounded-lg" style={{ width: `${msg.length * 10}px`, backgroundColor: index % 2 === 0 ? 'blue' : 'gray', color: index % 2 === 0 ? 'white' : 'black' }}>
                             {msg}
                         </div>
                     </div>
@@ -71,6 +71,8 @@ const Chat = () => {
             </div>
         </div>
     );
+    
+    
                 }    
 
 export default Chat;
