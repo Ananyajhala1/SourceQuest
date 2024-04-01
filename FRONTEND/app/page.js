@@ -10,6 +10,7 @@ import AboutUs from './aboutus/page';
 const navigation = [
   { name: 'About Us', href: '/aboutus' },
   { name: 'Features', href: '/features' },
+  { name: 'Chat-with-Github', href: 'https://chatwithgitrepo.streamlit.app/' },
 ]
 
 export default function Home() {
@@ -94,7 +95,7 @@ export default function Home() {
                 </div>
                 <div className="py-6 text-xl">
                   <link
-                    href="/dashboard"
+                    to="/dashboard"
                     className="-mx-3 block rounded-lg px-3 text-lg py-2.5 font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     Log in
@@ -144,7 +145,7 @@ export default function Home() {
                 Get started
               </a>
               <a href="/features" className="text-sm font-semibold leading-6 text-gray-900">
-                Learn more →
+                Learn more <span aria-hidden="true">→</span>
               </a>
 
             </div>

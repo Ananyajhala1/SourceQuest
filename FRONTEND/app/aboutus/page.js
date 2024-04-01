@@ -120,4 +120,3 @@ work on projects, participate in hackathons, and explore new opportunities toget
       </div>
     )
   }
-  
