@@ -6,8 +6,8 @@ const Services = () => {
 
   const services = [
     { title: 'Chat with Github Chatbot', description: 'The chatbot made using Langchain reACT Agent, AstraDB, Mistral 8x7b LLM which helps in navigating queries related to any repository stored on Github and codebases.' },
-    { title: 'Real time issue solving', description: 'Vonage chat greatly helps in resolving issues on the go as they are directly sent on chat to you whenever a new issues open up or a repository of your prefferred code language demands some work. ' },
-    { title: 'Personalized Dashboards with incentives ', description: 'Open source on the go, with our customized dashboards to suit your contributor learning journey.' },
+    { title: 'Hackathon teammate finder', description: 'Users can find teammates for hackathons based on their preferences. ' },
+    { title: 'Personalized expert learning roadmaps ', description: 'Roadmaps stand as invaluable guides detailing courses undertaken, pivotal resources accessed, and the strategic decisions that shaped the expertise.' },
   ];
 
   return (

@@ -27,8 +27,8 @@ export default function Home() {
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <img
-                className="h-8 w-auto"
-                src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Quest_2018.svg"
+                className="h-12 w-auto"
+                src="skillmates.png"
                 alt=""
               />
             </a>
@@ -45,14 +45,14 @@ export default function Home() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-900">
+              <a key={item.name} href={item.href} className="text-lg font-semibold leading-6 text-gray-900">
                 {item.name}
               </a>
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Link href="/dashboard">      
-            <div className="text-sm font-semibold leading-6 text-gray-900">
+            <div className="text-lg font-semibold leading-6 text-gray-900">
               Log in <span aria-hidden="true">&rarr;</span>
             </div>
             </Link>
@@ -122,8 +122,8 @@ export default function Home() {
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-              What's happening in the world of OPEN SOURCE.{' '}
-              <a href="https://opensource.com/tags/news" className="font-semibold text-yellow-600">
+              What's happening in the world of HACKATHONS. {' '}
+              <a href="https://devfolio.co/hackathons" className="font-semibold text-indigo-600">
                 <span className="absolute inset-0" aria-hidden="true" />
                 Read more <span aria-hidden="true">&rarr;</span>
               </a>
@@ -131,15 +131,15 @@ export default function Home() {
           </div>
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-             Open Source made easy with Source Quest
+             Skillmates, sharing skills!
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Your beginner friendly companion to guide you on this awesome journey!!
+              Connect and learn with your peers like never before!
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="/dashboard"
-                className="rounded-md bg-yellow-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-orange-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Get started
               </a>
@@ -162,7 +162,7 @@ export default function Home() {
             }}
           />
         </div>
-        <AboutUs/>
+        {/* <AboutUs/> */}
       </div>
     </div>
   )

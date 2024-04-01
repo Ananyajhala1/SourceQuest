@@ -29,8 +29,8 @@ const Dashboard = () => {
     <div className='flex items-center justify-between p-4'>
       <div className='flex items-center'>
         <img
-          className='h-8 w-auto'
-          src='https://upload.wikimedia.org/wikipedia/commons/5/5c/Quest_2018.svg'
+          className='h-12 w-auto'
+          src='skillmates.png'
           alt=''
         />
       </div>
@@ -38,10 +38,10 @@ const Dashboard = () => {
         <input
           type='text'
           placeholder='Search...'
-          className='px-3 py-2 border-2 border-black rounded focus:outline-none focus:border-orange-500'
+          className='px-3 py-2 border-2 border-black rounded focus:outline-none focus:border-indigo-500'
         />
        <Link href='/'>
-        <button className='hover:text-gray-300 px-4 py-2 bg-yellow-500 hover:bg-orange-600 text-white rounded transition duration-300'>
+        <button className='hover:text-gray-300 px-4 py-2 bg-indigo-500 hover:bg-indigo-600 text-white rounded transition duration-300'>
         
           Logout
         
@@ -74,8 +74,8 @@ const Dashboard = () => {
         <p className='text-sm text-gray-500'>IT sophomore at IIIT Vadodara</p> <br />
         <StarRating className='' rating={rating} />
         {/* Button to Chat */}
-        <button className='mt-4 px-4 py-2 bg-yellow-500 hover:bg-orange-600 text-white rounded transition duration-300'>
-          Chat with User
+        <button className='mt-4 px-4 py-2 bg-indigo-500 hover:bg-indigo-600 text-white rounded transition duration-300'>
+          View user Details
         </button>
       </div>
     </div>
@@ -83,19 +83,19 @@ const Dashboard = () => {
     <div className='flex flex-col translate-y-[-80px] '>
        <div className='flex flex-row h-36'>
        <div className='w-80 ml-4 mr-4 '>
-        <div className='bg-gradient-to-t from-yellow-300 to-white p-6 flex flex-row justify-between items-center rounded-xl border border-yellow-500 hover:border-orange-600 border-[2px] transition duration-300'>
+        <div className='bg-gradient-to-t from-indigo-300 to-white p-6 flex flex-row justify-between items-center rounded-xl border border-indigo-500 hover:border-indigo-600 border-[2px] transition duration-300'>
           <img src='coisn.gif' className='w-20 h-20' />
           <p className='text-gray-800 text-center text-lg font-semibold tracking-wide leading-tight'> Check in Badge</p>
         </div>
       </div>
       <div className='w-80 pr-4'>
-        <div className='bg-gradient-to-t from-yellow-300 to-white p-6 flex flex-row justify-between items-center rounded-xl border border-yellow-500 hover:border-orange-600 border-[2px] transition duration-300'>
+        <div className='bg-gradient-to-t from-indigo-300 to-white p-6 flex flex-row justify-between items-center rounded-xl border border-indigo-500 hover:border-indigo-600 border-[2px] transition duration-300'>
           <img src='gift.gif' className='w-20 h-20' />
           <p className='text-gray-800 text-center text-lg font-semibold tracking-wide leading-tight'>Daily task completion Badge</p>
         </div>
       </div>
       <div className='w-80 h-60'>
-        <div className='bg-gradient-to-t from-yellow-300 to-white p-6 flex flex-row justify-between items-center rounded-xl border border-yellow-500 hover:border-orange-600 border-[2px] transition duration-300'>
+        <div className='bg-gradient-to-t from-indigo-300 to-white p-6 flex flex-row justify-between items-center rounded-xl border border-indigo-500 hover:border-indigo-600 border-[2px] transition duration-300'>
           <img src='chart.gif' className='w-20 h-20' />
           <p className='text-gray-800 text-center text-lg font-semibold tracking-wide leading-tight'>Progress Badge</p>
         </div>
@@ -103,7 +103,7 @@ const Dashboard = () => {
        </div>
 
   {/* Big horizontal rectangular box with three boxes inside */}
-<div className='bg-yellow-100 p-4 h-56 mt-4'>
+<div className='bg-indigo-100 p-4 h-56 mt-4'>
   <div className='flex justify-between'>
     <div className='w-1/3 h-48 bg-white p-4 mr-4 rounded flex flex-col justify-between'>
       {/* Content for the first box */}
@@ -119,7 +119,7 @@ const Dashboard = () => {
           {/* Add more badges for additional tech stack */}
         </div>
       </div>
-      <button className="border-yellow-500 border-2 text-yellow-500 px-4 py-2 rounded mx-auto mt-2 hover:bg-yellow-500 hover:text-white active:bg-gray-400 transition duration-300">
+      <button className="border-indigo-500 border-2 text-indigo-500 px-4 py-2 rounded mx-auto mt-2 hover:bg-indigo-500 hover:text-white active:bg-gray-400 transition duration-300">
         Go to Repository
       </button>
     </div>
@@ -131,13 +131,13 @@ const Dashboard = () => {
           <div className="bg-red-500 text-white px-2 py-1 rounded">
             Angular
           </div>
-          <div className="bg-yellow-500 text-white px-2 py-1 rounded">
+          <div className="bg-indigo-500 text-white px-2 py-1 rounded">
             TypeScript
           </div>
           {/* Add more badges for additional tech stack */}
         </div>
       </div>
-      <button className="border-yellow-500 border-2 text-yellow-500 px-4 py-2 rounded mx-auto mt-2 hover:bg-yellow-500 hover:text-white active:bg-gray-400 transition duration-300">
+      <button className="border-indigo-500 border-2 text-indigo-500 px-4 py-2 rounded mx-auto mt-2 hover:bg-indigo-500 hover:text-white active:bg-gray-400 transition duration-300">
         Go to Repository
       </button>
     </div>
@@ -155,7 +155,7 @@ const Dashboard = () => {
           {/* Add more badges for additional tech stack */}
         </div>
       </div>
-      <button className="border-yellow-500 border-2 text-yellow-500 px-4 py-2 rounded mx-auto mt-2 hover:bg-yellow-500 hover:text-white active:bg-gray-400 transition duration-300">
+      <button className="border-indigo-500 border-2 text-indigo-500 px-4 py-2 rounded mx-auto mt-2 hover:bg-indigo-500 hover:text-white active:bg-gray-400 transition duration-300">
         Go to Repository
       </button>
     </div>

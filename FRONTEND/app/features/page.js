@@ -16,8 +16,8 @@ const Features = () => {
 
   const services = [
     { title: 'Chat with Github Chatbot', description: 'The chatbot made using Langchain reACT Agent, AstraDB, Mistral 8x7b LLM which helps in navigating queries related to any repository stored on Github and codebases.' },
-    { title: 'Real time issue tracking', description: 'Vonage chat greatly helps in resolving issues on the go as they are directly sent on chat to you whenever a new issues open up or a repository of your preferred code language demands some work. ' },
-    { title: 'Personalized Dashboards with incentives ', description: 'Open source on the go, with our customized dashboards to suit your contributor learning journey.' },
+    { title: 'Hackathon teammate finder', description: 'Users can find teammates for hackathons based on their preferences. ' },
+    { title: 'Personalized expert learning roadmaps ', description: 'Roadmaps stand as invaluable guides detailing courses undertaken, pivotal resources accessed, and the strategic decisions that shaped the expertise.' },
   ];
 
   return (
@@ -28,8 +28,8 @@ const Features = () => {
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <img
-                className="h-8 w-auto"
-                src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Quest_2018.svg"
+                className="h-12 w-auto"
+                src="skillmates.png"
                 alt=""
               />
             </a>
@@ -46,14 +46,14 @@ const Features = () => {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-900">
+              <a key={item.name} href={item.href} className="text-lg font-semibold leading-6 text-gray-900">
                 {item.name}
               </a>
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Link href="/dashboard">      
-            <div className="text-sm font-semibold leading-6 text-gray-900">
+            <div className="text-lg font-semibold leading-6 text-gray-900">
               Log in <span aria-hidden="true">&rarr;</span>
             </div>
             </Link>

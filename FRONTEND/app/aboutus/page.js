@@ -57,8 +57,8 @@ const links = [
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <img
-                className="h-8 w-auto"
-                src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Quest_2018.svg"
+                className="h-12 w-auto"
+                src="skillmates.png"
                 alt=""
               />
             </a>
@@ -75,14 +75,14 @@ const links = [
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-900">
+              <a key={item.name} href={item.href} className="text-lg font-semibold leading-6 text-gray-900">
                 {item.name}
               </a>
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Link href="/dashboard">      
-            <div className="text-sm font-semibold leading-6 text-gray-900">
+            <div className="text-lg font-semibold leading-6 text-gray-900">
               Log in <span aria-hidden="true">&rarr;</span>
             </div>
             </Link>
@@ -90,9 +90,13 @@ const links = [
         </nav>
         </header>
           <div className="mx-auto max-w-2xl lg:mx-0">
+            <br/>
             <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">About us</h2>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              We aim to help beginner contributors work better with open source and github codebases. 
+            Skillmates is a platform designed to connect institute students, allowing them to create profiles
+highlighting their skills, achievements, ongoing learning endeavors, and areas of interest.</p><br/><p className="mt-6 text-lg leading-8 text-gray-300">
+The platform aims to foster collaboration, facilitate knowledge exchange, and empower students to
+work on projects, participate in hackathons, and explore new opportunities together.
               </p>
           </div>
           <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
